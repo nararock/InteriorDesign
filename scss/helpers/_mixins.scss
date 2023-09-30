@@ -1,0 +1,17 @@
+@mixin center($width) {
+    padding-left: calc(50% - $width);
+    padding-right: calc(50% - $width);
+}
+
+@mixin flex1($direction, $gap){
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+    gap: $gap;
+}
+
+@mixin text($fontSize){
+    font-family: 'Jost';
+    font-size: $fontSize;
+    color: $colorTextSmall;
+}
