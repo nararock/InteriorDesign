@@ -18,10 +18,7 @@ a {
 
 .header{
     @include center($width);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    @include flex2($direction);
     padding-top: 44px;
     margin-bottom: 57px;
     &-left{
@@ -55,7 +52,7 @@ a {
     @include center($width);
     margin-bottom: 96px;
     &-content{
-        background-image: url('/img/cover.png');
+        background-image: url('../img/cover.png');
         height: 758px;
         background-repeat: no-repeat;
         padding: 208px 715px 208px 52px;
@@ -186,8 +183,8 @@ a {
         }
     }
     &-content{
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         gap: 27px;
         .articles-item{
             border: 1px solid #E7E7E7;
@@ -217,10 +214,7 @@ a {
             }
             &__wrapper{
                 position: relative;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: space-between;
+                @include flex2($direction);
                 .articles-item__arrow{
                     position: absolute;
                     right: 22px;
@@ -291,3 +285,4 @@ a {
         
     }
 }
+@import 'article';

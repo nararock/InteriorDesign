@@ -10,6 +10,13 @@
     gap: $gap;
 }
 
+@mixin flex2($direction){
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+    justify-content: space-between;
+}
+
 @mixin text($fontSize){
     font-family: 'Jost';
     font-size: $fontSize;

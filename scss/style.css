@@ -60,7 +60,7 @@ a {
   margin-bottom: 96px;
 }
 .cover-content {
-  background-image: url("/img/cover.png");
+  background-image: url("../img/cover.png");
   height: 758px;
   background-repeat: no-repeat;
   padding: 208px 715px 208px 52px;
@@ -204,8 +204,8 @@ a {
   text-align: center;
 }
 .articles-content {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 27px;
 }
 .articles-content .articles-item {
@@ -317,4 +317,104 @@ a {
   font-family: "Jost";
   font-size: 22px;
   color: #4D5053;
+}
+
+.banner {
+  background-image: url("../img/articlebanner.png");
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  height: 356px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 216px;
+}
+.banner-block {
+  background-color: #fff;
+  padding: 41px 78px 41px 78px;
+  position: absolute;
+  border-radius: 37px 37px 0 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.banner-block__header {
+  font-size: 50px;
+  line-height: 125%;
+}
+.banner-block__text {
+  font-family: "Jost";
+  font-size: 22px;
+  color: #4D5053;
+}
+
+.post {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+  margin-bottom: 150px;
+}
+.post-header {
+  font-size: 50px;
+  margin-bottom: 27px;
+}
+.post-block {
+  border-radius: 62px;
+  border: 1px solid #E7E7E7;
+  padding: 22px 56px 22px 22px;
+  display: flex;
+  flex-direction: row;
+  gap: 65px;
+}
+.post-block__content {
+  padding-top: 51px;
+  padding-bottom: 51px;
+}
+.post-block__content .post-block__subheader {
+  font-size: 25px;
+  margin-bottom: 22px;
+}
+.post-block__content .post-block__textfirst,
+.post-block__content .post-block__textsecond {
+  font-family: "Jost";
+  font-size: 22px;
+  color: #4D5053;
+  margin-bottom: 50px;
+  padding-right: 20px;
+}
+.post-block__content .post-block__date {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Jost";
+  font-size: 16px;
+  color: #4D5053;
+}
+
+.articles-pagination {
+  display: flex;
+  justify-content: center;
+  padding-top: 51px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.articles-pagination__item {
+  position: relative;
+}
+.articles-pagination__item p {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+.articles-pagination__item:hover {
+  border: none;
+  cursor: pointer;
+}
+.articles-pagination__item:hover svg circle {
+  fill: #F4F0EC;
+  stroke: none;
 }/*# sourceMappingURL=style.css.map */

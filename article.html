@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
     <header class="header">
         <div class="header-left">
             <svg class="header-left__svg" width="34" height="34" viewBox="0 0 34 34" fill="none"
@@ -28,133 +29,37 @@
             <a class="header-right__link" href="#">Blog</a>
         </div>
     </header>
-    <div class="cover">
-        <div class="cover-content">
-            <h1 class="cover-content__header">Let Your Home<br>
-                Be Unique
-            </h1>
-            <p class="cover-content__text">There are many variations of the passages of
-                lorem Ipsum fromavailable, majority
-            </p>
-            <button class="cover-content__button"><span>Get Started</span><svg width="19" height="17"
-                    viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2 8.43542L15.7232 8.29857M10.6182 1.91138L17.1412 8.43436L10.4868 15.0887"
-                        stroke="#CDA274" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
-                </svg></button>
+    <div class="banner">
+        <div class="banner-block">
+            <h1 class="banner-block__header">Articles & News</h1>
+            <p class="banner-block__text">Home / Blog</p>
         </div>
     </div>
-    <div class="projects">
-        <div class="projects-header">
-            <h1 class="projects-header__head">Follow Our Projects</h1>
-            <p class="projects-header__text">It is a long established fact that a reader will be distracted by the of
-                readable content of page
-                lookings at its layouts points.
-            </p>
-        </div>
-        <div class="projects-catalog">
-            <div class="projects-item">
-                <img class="projects-item__img" src="./img/project1.png" alt="project">
-                <div class="projects-item__content">
-                    <div class="projects-item__textcontent">
-                        <h3 class="projects-item__header">Modern Kitchen</h3>
-                        <p class="projects-item__text">Decor / Artchitecture</p>
-                    </div>
-                    <svg class="projects-item__circle" width="70" height="70" viewBox="0 0 70 70" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="35" cy="35" r="35" fill="#F4F0EC" />
-                    </svg>
-                    <svg class="projects-item__arrow" width="10" height="20" viewBox="0 0 10 20" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 19L9 10L1 1" stroke="#292F36" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-                </div>
-            </div>
-            <div class="projects-item">
-                <img class="projects-item__img" src="./img/project2.png" alt="project">
-                <div class="projects-item__content">
-                    <div class="projects-item__textcontent">
-                        <h3 class="projects-item__header">Modern Kitchen</h3>
-                        <p class="projects-item__text">Decor / Artchitecture</p>
-                    </div>
-                    <svg class="projects-item__circle" width="70" height="70" viewBox="0 0 70 70" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="35" cy="35" r="35" fill="#F4F0EC" />
-                    </svg>
-                    <svg class="projects-item__arrow" width="10" height="20" viewBox="0 0 10 20" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 19L9 10L1 1" stroke="#292F36" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-                </div>
-            </div>
-            <div class="projects-item">
-                <img class="projects-item__img" src="./img/project3.png" alt="project">
-                <div class="projects-item__content">
-                    <div class="projects-item__textcontent">
-                        <h3 class="projects-item__header">Modern Kitchen</h3>
-                        <p class="projects-item__text">Decor / Artchitecture</p>
-                    </div>
-                    <svg class="projects-item__circle" width="70" height="70" viewBox="0 0 70 70" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="35" cy="35" r="35" fill="#F4F0EC" />
-                    </svg>
-                    <svg class="projects-item__arrow" width="10" height="20" viewBox="0 0 10 20" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 19L9 10L1 1" stroke="#292F36" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-                </div>
-            </div>
-            <div class="projects-item">
-                <img class="projects-item__img" src="./img/project4.png" alt="project">
-                <div class="projects-item__content">
-                    <div class="projects-item__textcontent">
-                        <h3 class="projects-item__header">Modern Kitchen</h3>
-                        <p class="projects-item__text">Decor / Artchitecture</p>
-                    </div>
-                    <svg class="projects-item__circle" width="70" height="70" viewBox="0 0 70 70" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="35" cy="35" r="35" fill="#F4F0EC" />
-                    </svg>
-                    <svg class="projects-item__arrow" width="10" height="20" viewBox="0 0 10 20" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 19L9 10L1 1" stroke="#292F36" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
+    <div class="post">
+        <h1 class="post-header">Latest Post</h1>
+        <div class="post-block">
+            <img class="post-block__image" src="./img/latestpost.png" alt="photo latest post">
+            <div class="post-block__content">
+                <h2 class="post-block__subheader">Low Cost Latest Invented Interior<br> Designing Ideas</h2>
+                <p class="post-block__textfirst">Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpis
+                    dignissim
+                    maximus.posuere in.Contrary to popular belief.</p>
+                <p class="post-block__textsecond">Lorem Ipsum is not simply random text. It has roots in a piece of
+                    classica.</p>
+                <div class="post-block__date">
+                    <p>26 December,2022</p>
+                    <svg width="52" height="53" viewBox="0 0 52 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="26" cy="26.5" r="26" fill="#F4F0EC" />
+                        <path d="M23.771 33.1855L29.7139 26.4998L23.771 19.8141" stroke="#292F36" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="statistic">
-        <div class="statistic-board">
-            <div class="statistic-item">
-                <h1 class="statistic-item__header">12</h1>
-                <p class="statistic-item__text">Years Of Experiance</p>
-            </div>
-            <div class="statistic-line"></div>
-            <div class="statistic-item">
-                <h1 class="statistic-item__header">85</h1>
-                <p class="statistic-item__text">Success Project</p>
-            </div>
-            <div class="statistic-line"></div>
-            <div class="statistic-item">
-                <h1 class="statistic-item__header">15</h1>
-                <p class="statistic-item__text">Active Project</p>
-            </div>
-            <div class="statistic-line"></div>
-            <div class="statistic-item">
-                <h1 class="statistic-item__header">95</h1>
-                <p class="statistic-item__text">Happy CUstomers</p>
-            </div>
-        </div>
-
     </div>
     <div class="articles">
         <div class="articles-header">
             <h1 class="articles-header__head">Articles & News</h1>
-            <p class="articles-header__text">It is a long established fact that a reader will be distracted by the of
-                readable content of a page when lookings at its layouts the points of using.</p>
         </div>
         <div id="app" class="articles-content">
             <div class="articles-item" v-for="item in articles" :key="item.id">
@@ -177,6 +82,33 @@
                         </svg>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="articles-pagination">
+            <div class="articles-pagination__item">
+                <svg width="53" height="52" viewBox="0 0 53 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="26.5" cy="26" r="25.5" stroke="#CDA274" />
+                </svg>
+                <p>01</p>
+            </div>
+            <div class="articles-pagination__item">
+                <svg width="53" height="52" viewBox="0 0 53 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="26.5" cy="26" r="25.5" stroke="#CDA274" />
+                </svg>
+                <p>02</p>
+            </div>
+            <div class="articles-pagination__item">
+                <svg width="53" height="52" viewBox="0 0 53 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="26.5" cy="26" r="25.5" stroke="#CDA274" />
+                </svg>
+                <p>03</p>
+            </div>
+            <div class="articles-pagination__item">
+                <svg width="53" height="52" viewBox="0 0 53 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="26.5" cy="26" r="25.5" stroke="#CDA274" />
+                    <path d="M23.5571 32L29.5 25.3143L23.5571 18.6286" stroke="#292F36" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
             </div>
         </div>
     </div>
@@ -222,7 +154,6 @@
         </div>
 
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
     <script>
         var app = new Vue({
             el: '#app',
@@ -236,6 +167,15 @@
                     },
                     {
                         id: 3, img: "./img/article3.png", rectangle: "Interior Design", header1: "Best For Any Office & Business Interior ", header2: "Solution", date: "25 December,2022"
+                    },
+                    {
+                        id: 4, img: "./img/article4.png", rectangle: "Kitchen Design", header1: "Let’s Get Solution For Building Construction ", header2: "Work", date: "26 December,2022"
+                    },
+                    {
+                        id: 5, img: "./img/article5.png", rectangle: "Living Design", header1: "Low Cost Latest Invented Interior Designing ", header2: "Ideas.", date: "22 December,2022"
+                    },
+                    {
+                        id: 6, img: "./img/article6.png", rectangle: "Interior Design", header1: "Best For Any Office & Business Interior ", header2: "Solution", date: "25 December,2022"
                     },
                 ],
             }
