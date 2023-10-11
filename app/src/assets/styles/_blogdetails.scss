@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: row;
     gap: 52px;
-    @include center($width);
+    @include centerPage($widthPage);
     &-article{
         width: 67%;        
         &__item{

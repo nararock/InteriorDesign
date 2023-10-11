@@ -1,6 +1,6 @@
-@mixin center($width) {
-    padding-left: calc(50% - $width);
-    padding-right: calc(50% - $width);
+@mixin centerPage($width) {
+    padding-left: calc(50% - #{$widthPage});
+    padding-right: calc(50% - #{$widthPage});
 }
 
 @mixin flex1($direction, $gap){

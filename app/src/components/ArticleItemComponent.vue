@@ -1,97 +1,4 @@
-const articles ={
-    data(){
-        const articles = [
-            {
-                id:1, tag:"Kitchen", 
-                header: "Let’s Get Solution for Building Construction Work",
-                img1:"img/blog1.png", date:"26 December,2022",
-                text1: `Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular
-                belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                alteration in some form, by injecthumour, or randomised words which don't look even slightly believable.`,
-                text2: `Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on
-                the Internet tend to repeat predefined chunks as necessary.`,
-                quote:"The details are not the details. They make the design.",
-                subheader:"Design sprints are great", 
-                text3:`Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular
-                belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.`,
-                img2:"img/blog2.png", 
-                text4:`Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular
-                belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.` 
-            },
-            {
-                id:2, tag:"Bedroom", 
-                header:"Low Cost Latest Invented Interior Designing Ideas.",
-                img1:"img/blog3.jpg", date:"13 October,2022",
-                text1:`In larger Victorian houses it was common to have accessible from the bedroom a boudoir for the lady of the house and a 
-                dressing room for the gentleman.`, 
-                text2:`In the 14th century the lower class slept on mattresses that were stuffed with hay and broom straws.
-                During the 16th century mattresses stuffed with feathers started to gain popularity, with those who could afford them.`,
-                quote:"Design is intelligence made visible.",
-                subheader:"Make it simple, but significant",
-                text3:`Furniture and other items in bedrooms vary greatly, depending on taste, local traditions and the socioeconomic 
-                status of an individual.`,
-                img2:"img/blog4.jpg",
-                text4:`Night stands are also popular. They are used to put various items on, such as an alarm clock or a small lamp.`
-            },
-            {
-                id:3, tag:"Building",
-                header:"Best For Any Office & Business Interior Solution",
-                img1:"img/blog5.jpg", date:"1 November,2022",
-                text1:`A building or edifice is an enclosed structure with a roof and walls, usually standing permanently in one place,
-                such as a house or factory.`,
-                text2: `Buildings come in a variety of sizes, shapes, and functions, and have been adapted throughout history for numerous 
-                factors, from building materials available, to weather conditions, land prices, ground conditions, specific uses, prestige, 
-                and aesthetic reasons. `,
-                quote:"The function of design is letting design function.",
-                subheader:"Design is not a single object or dimension",
-                text3:`Buildings serve several societal needs – occupancy, primarily as shelter from weather, security, living space, privacy, 
-                to store belongings, and to comfortably live and work.`,
-                img2:"img/blog6.png",
-                text4:`There is clear evidence of homebuilding from around 18,000 BC.`
-            },
-            {
-                id:4, tag:"Architecture",
-                header:"What Is Architecture?",
-                img1:"img/blog7.jpg", date:"31 December,2022",
-                text1:`Architecture is the art and technique of designing and building, as distinguished from the skills associated with construction.`,
-                text2: `It is both the process and the product of sketching, conceiving,[4] planning, designing, and constructing buildings or other structures. `,
-                quote:"Design is a formal response to a strategic question.",
-                subheader:"A Dive Into the World of Architecture in Art",
-                text3:`Architecture is the discipline of designing and building a range of structures that are used to meet both functional and aesthetic requirements. 
-                Since every culture has a unique relationship with the natural world and with the other cultures around them, the structures it creates convey a great 
-                deal about its traditions, history, environment, artistic sensibilities, and many other facets of everyday life.`,
-                img2:"img/blog8.jpeg",
-                text4:`In architecture, all of these requirements must be satisfied. The second requirement listed is regarded as a constant, whereas the first and third 
-                change in importance depending on the social utility of the structure. `
-            },
-            {
-                id:5, tag:"Kitchen Planning",
-                header:"Planning a kitchen: where do I start?",
-                img1:"img/blog9.jpg", date:"11 June,2022",
-                text1:`All beginnings are difficult. To mark out key points for yourself, it’s best to start with a checklist. Among the important blocks of topics are: 
-                Kitchen style, kitchen size, budget and timeline.`,
-                text2: `The Internet is, of course, filled with a wealth of information about kitchen planning. Here it can help to pay attention to neutral portals that 
-                report independently of brands. Photo galleries provide inspiration. `,
-                quote:"Good design is good business.",
-                subheader:"Planning a kitchen: how much does it cost?",
-                text3:`On average, kitchen buyers in German-speaking countries spend €7,125 (as of 2018, published May 2019, statista.com) to buy their new kitchen. `,
-                img2:"img/blog10.jpeg",
-                text4:`However, the upscale premium segment in particular is booming: a growing group of buyers is forming in the kitchen segment starting at 12,000 euros, 
-                who see kitchens as a high-quality, long-lasting investment. Correspondingly, a lot of financial reserves are therefore increasingly being used for planning 
-                a kitchen instead of for a new car or a vacation.`
-            }
-        ]
-        return{
-            articles: articles,
-            temp: articles,
-        }
-    },
-    methods: {
-        getArticle(tag){
-            this.temp = this.articles.filter(item=>item.tag === tag);
-        }
-    },
-    template:`
+<template>
     <div class="blog">
         <div class="blog-article">
             <div class="blog-article__item" v-for="item in this.temp" :key="item.id">
@@ -104,7 +11,7 @@ const articles ={
                     <p class="blog-article__text">
                         {{item.text1}}
                     </p>
-                    <p 
+                    <p class="blog-article__text"> 
                         {{item.text2}}
                     </p>
                     <div class="blog-article__quote">
@@ -158,5 +65,111 @@ const articles ={
                 </div>
             </div>
     </div>
-    `
+</template>
+<script>
+import img10 from "../assets/img/blog1.png";
+import img11 from "../assets/img/blog2.png";
+import img12 from "../assets/img/blog3.jpg";
+import img13 from "../assets/img/blog4.jpg";
+import img14 from "../assets/img/blog5.jpg";
+import img15 from "../assets/img/blog6.png";
+import img16 from "../assets/img/blog7.jpg";
+import img17 from "../assets/img/blog8.jpeg";
+import img18 from "../assets/img/blog9.jpg";
+import img19 from "../assets/img/blog10.jpeg";
+
+export default{
+    data(){
+        const articles = [
+            {
+                id:1, tag:"Kitchen", 
+                header: "Let’s Get Solution for Building Construction Work",
+                img1:img10, date:"26 December,2022",
+                text1: `Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular
+                belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                alteration in some form, by injecthumour, or randomised words which don't look even slightly believable.`,
+                text2: `Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on
+                the Internet tend to repeat predefined chunks as necessary.`,
+                quote:"The details are not the details. They make the design.",
+                subheader:"Design sprints are great", 
+                text3:`Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular
+                belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.`,
+                img2:img11, 
+                text4:`Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular
+                belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.` 
+            },
+            {
+                id:2, tag:"Bedroom", 
+                header:"Low Cost Latest Invented Interior Designing Ideas.",
+                img1:img12, date:"13 October,2022",
+                text1:`In larger Victorian houses it was common to have accessible from the bedroom a boudoir for the lady of the house and a 
+                dressing room for the gentleman.`, 
+                text2:`In the 14th century the lower class slept on mattresses that were stuffed with hay and broom straws.
+                During the 16th century mattresses stuffed with feathers started to gain popularity, with those who could afford them.`,
+                quote:"Design is intelligence made visible.",
+                subheader:"Make it simple, but significant",
+                text3:`Furniture and other items in bedrooms vary greatly, depending on taste, local traditions and the socioeconomic 
+                status of an individual.`,
+                img2:img13,
+                text4:`Night stands are also popular. They are used to put various items on, such as an alarm clock or a small lamp.`
+            },
+            {
+                id:3, tag:"Building",
+                header:"Best For Any Office & Business Interior Solution",
+                img1:img14, date:"1 November,2022",
+                text1:`A building or edifice is an enclosed structure with a roof and walls, usually standing permanently in one place,
+                such as a house or factory.`,
+                text2: `Buildings come in a variety of sizes, shapes, and functions, and have been adapted throughout history for numerous 
+                factors, from building materials available, to weather conditions, land prices, ground conditions, specific uses, prestige, 
+                and aesthetic reasons. `,
+                quote:"The function of design is letting design function.",
+                subheader:"Design is not a single object or dimension",
+                text3:`Buildings serve several societal needs – occupancy, primarily as shelter from weather, security, living space, privacy, 
+                to store belongings, and to comfortably live and work.`,
+                img2:img15,
+                text4:`There is clear evidence of homebuilding from around 18,000 BC.`
+            },
+            {
+                id:4, tag:"Architecture",
+                header:"What Is Architecture?",
+                img1:img16, date:"31 December,2022",
+                text1:`Architecture is the art and technique of designing and building, as distinguished from the skills associated with construction.`,
+                text2: `It is both the process and the product of sketching, conceiving,[4] planning, designing, and constructing buildings or other structures. `,
+                quote:"Design is a formal response to a strategic question.",
+                subheader:"A Dive Into the World of Architecture in Art",
+                text3:`Architecture is the discipline of designing and building a range of structures that are used to meet both functional and aesthetic requirements. 
+                Since every culture has a unique relationship with the natural world and with the other cultures around them, the structures it creates convey a great 
+                deal about its traditions, history, environment, artistic sensibilities, and many other facets of everyday life.`,
+                img2:img17,
+                text4:`In architecture, all of these requirements must be satisfied. The second requirement listed is regarded as a constant, whereas the first and third 
+                change in importance depending on the social utility of the structure. `
+            },
+            {
+                id:5, tag:"Kitchen Planning",
+                header:"Planning a kitchen: where do I start?",
+                img1:img18, date:"11 June,2022",
+                text1:`All beginnings are difficult. To mark out key points for yourself, it’s best to start with a checklist. Among the important blocks of topics are: 
+                Kitchen style, kitchen size, budget and timeline.`,
+                text2: `The Internet is, of course, filled with a wealth of information about kitchen planning. Here it can help to pay attention to neutral portals that 
+                report independently of brands. Photo galleries provide inspiration. `,
+                quote:"Good design is good business.",
+                subheader:"Planning a kitchen: how much does it cost?",
+                text3:`On average, kitchen buyers in German-speaking countries spend €7,125 (as of 2018, published May 2019, statista.com) to buy their new kitchen. `,
+                img2:img19,
+                text4:`However, the upscale premium segment in particular is booming: a growing group of buyers is forming in the kitchen segment starting at 12,000 euros, 
+                who see kitchens as a high-quality, long-lasting investment. Correspondingly, a lot of financial reserves are therefore increasingly being used for planning 
+                a kitchen instead of for a new car or a vacation.`
+            }
+        ]
+        return{
+            articles: articles,
+            temp: articles,
+        }
+    },
+    methods: {
+        getArticle(tag){
+            this.temp = this.articles.filter(item=>item.tag === tag);
+        }
+    },
 }
+</script>

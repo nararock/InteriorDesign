@@ -27,7 +27,7 @@
     }
 }
 .post{
-    @include center($width);
+    @include centerPage($widthPage);
     margin-bottom: 150px;
     &-header{
         font-size: 50px;

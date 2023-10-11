@@ -1,4 +1,5 @@
 @import './helpers/helpers';
+
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +18,9 @@ a {
 }
 
 .header{
-    @include center($width);
+    @include centerPage($widthPage);
+    // padding-left: calc(50% - 600px);
+    // padding-right: calc(50% - 600px);
     @include flex2($direction);
     padding-top: 44px;
     margin-bottom: 57px;
@@ -49,7 +52,7 @@ a {
 }
 
 .cover{
-    @include center($width);
+    @include centerPage($widthPage);
     margin-bottom: 96px;
     &-content{
         background-image: url('../img/cover.png');
@@ -84,7 +87,7 @@ a {
 }
 
 .projects{
-    @include center($width);
+    @include centerPage($widthPage);
     margin-bottom: 96px;
     &-header{
         width: 61%;
@@ -142,7 +145,7 @@ a {
     background-color: #F4F0EC;
     margin-bottom: 96px;
     &-board{
-        @include center($width);
+        @include centerPage($widthPage);
         padding-top: 151px;
         padding-bottom: 151px;
         display: flex;
@@ -166,7 +169,7 @@ a {
 }
 
 .articles{
-    @include center($width);
+    @include centerPage($widthPage);
     margin-bottom: 96px;
     &-header{
         margin: auto;
@@ -238,7 +241,7 @@ a {
 }
 
 .footer{
-    @include center($width);
+    @include centerPage($widthPage);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 96px;
