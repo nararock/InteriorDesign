@@ -1,5 +1,4 @@
 <template>
-     <HeaderComponent/>  
     <div class="banner">
         <div class="banner-block">
             <h1 class="banner-block__header">Articles & News</h1>
@@ -33,27 +32,7 @@
             <h1 class="articles-header__head">Articles & News</h1>
         </div>
         <div id="app" class="articles-content">
-            <div class="articles-item" v-for="item in articles" :key="item.id">
-                <img class="articles-item__img" :src="item.img" alt="photo kitchen">
-                <div class="articles-item__rectangle">
-                    {{item.rectangle}}
-                </div>
-                <div class="articles-item__content">
-                    <h2 class="articles-item__header">{{item.header1}}<br>{{item.header2}}</h2>
-                    <div class="articles-item__content__wrapper">
-                        <p class="articles-item__text">{{item.date}}</p>
-                        <svg class="articles-item__circle" width="52" height="53" viewBox="0 0 52 53" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="26" cy="26.267" r="26" fill="#F4F0EC" />
-                        </svg>
-                        <svg class="articles-item__arrow" width="9" height="16" viewBox="0 0 9 16" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.77144 14.9527L7.71429 8.267L1.77144 1.58129" stroke="#292F36" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                </div>
-            </div>
+            <CardComponent v-for="item in articles" :key="item.id" :article="item"/>
         </div>
         <div class="articles-pagination">
             <div class="articles-pagination__item">
@@ -83,48 +62,43 @@
             </div>
         </div>
     </div>
-    <FooterComponent/>
+    
 </template>
 
 <script>
-    import HeaderComponent from "./HeaderComponent.vue";
-    import FooterComponent from "./FooterComponent.vue";
+    
     import img4 from "../assets/img/article1.png";
     import img5 from "../assets/img/article2.png";
     import img6 from "../assets/img/article3.png";
     import img7 from "../assets/img/article4.png";
     import img8 from "../assets/img/article5.png";
     import img9 from "../assets/img/article6.png";
+import CardComponent from "./CardComponent.vue";
 export default{
-    
     data() {
-        return{
+        return {
             articles: [
-                    {
-                        id: 1, img: img4, rectangle: "Kitchen Design", header1: "Let’s Get Solution For Building Construction", header2: "Work", date: "26 December,2022"
-                    },
-                    {
-                        id: 2, img: img5, rectangle: "Living Design", header1: "Low Cost Latest Invented Interior Designing", header2: "Ideas.", date: "22 December,2022"
-                    },
-                    {
-                        id: 3, img: img6, rectangle: "Interior Design", header1: "Best For Any Office & Business Interior ", header2: "Solution", date: "25 December,2022"
-                    },
-                    {
-                        id: 4, img: img7, rectangle: "Kitchen Design", header1: "Let’s Get Solution For Building Construction ", header2: "Work", date: "26 December,2022"
-                    },
-                    {
-                        id: 5, img: img8, rectangle: "Living Design", header1: "Low Cost Latest Invented Interior Designing ", header2: "Ideas.", date: "22 December,2022"
-                    },
-                    {
-                        id: 6, img: img9, rectangle: "Interior Design", header1: "Best For Any Office & Business Interior ", header2: "Solution", date: "25 December,2022"
-                    },
-                ],
-        }
-                
+                {
+                    id: 1, img: img4, rectangle: "Kitchen Design", header1: "Let’s Get Solution For Building Construction", header2: "Work", date: "26 December,2022"
+                },
+                {
+                    id: 2, img: img5, rectangle: "Living Design", header1: "Low Cost Latest Invented Interior Designing", header2: "Ideas.", date: "22 December,2022"
+                },
+                {
+                    id: 3, img: img6, rectangle: "Interior Design", header1: "Best For Any Office & Business Interior ", header2: "Solution", date: "25 December,2022"
+                },
+                {
+                    id: 4, img: img7, rectangle: "Kitchen Design", header1: "Let’s Get Solution For Building Construction ", header2: "Work", date: "26 December,2022"
+                },
+                {
+                    id: 5, img: img8, rectangle: "Living Design", header1: "Low Cost Latest Invented Interior Designing ", header2: "Ideas.", date: "22 December,2022"
+                },
+                {
+                    id: 6, img: img9, rectangle: "Interior Design", header1: "Best For Any Office & Business Interior ", header2: "Solution", date: "25 December,2022"
+                },
+            ],
+        };
     },
-    components:{
-        HeaderComponent, FooterComponent
-    }
-    
+    components: { CardComponent }
 }
 </script>
