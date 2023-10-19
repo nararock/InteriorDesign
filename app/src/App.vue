@@ -8,6 +8,7 @@
   <HeaderComponent/>
   <BlogDetailsComponent/>
   <FooterComponent/>
+  <ProjectComponent/>
 </template>
 
 <script>
@@ -16,13 +17,15 @@ import ArticleComponent from './components/ArticleComponent.vue';
 import BlogDetailsComponent from './components/BlogDetailsComponent.vue';
 import HeaderComponent from './components/HeaderComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
+import ProjectComponent from './components/ProjectComponent.vue';
 
 export default {
   name: 'App',
   components: {
     IndexComponent, ArticleComponent, BlogDetailsComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ProjectComponent
 }
 }
 </script>
