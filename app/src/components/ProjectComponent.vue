@@ -378,9 +378,9 @@ import FooterComponent from './FooterComponent.vue';
               
         },
         addFavourite(event){
-            const img = event.target;
-            const svg = img.nextSibling;
-            const path = svg.getElementsByTagName('path');
+            const element = event.target;
+            const parent = element.parentElement;
+            const path = parent.getElementsByTagName('path');
             if (path[0].style.fill === ""){
                 path[0].style.fill = "#FFA928";
             } else {
