@@ -21,10 +21,6 @@
 
 <style lang="scss" scoped>
     .banner{
-    // background-image: v-bind(img);
-    // background-repeat: no-repeat;
-    // position: relative;
-    // background-size: cover;
     height: 356px;
     display: flex;
     justify-content: center;
