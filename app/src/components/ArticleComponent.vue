@@ -52,22 +52,22 @@ export default{
         return {
             articles: [
                 {
-                    id: 1, img: img4, rectangle: "Kitchen Design", header1: "Let’s Get Solution For Building Construction", header2: "Work", date: "26 December,2022"
+                    id: 1, img: img4, rectangle: "Kitchen Design", header1: "Let’s Get Solution For Building Construction", header2: "Work", date: "26 December,2022", tag:"Kitchen"
                 },
                 {
-                    id: 2, img: img5, rectangle: "Living Design", header1: "Low Cost Latest Invented Interior Designing", header2: "Ideas.", date: "22 December,2022"
+                    id: 2, img: img5, rectangle: "Living Design", header1: "Low Cost Latest Invented Interior Designing", header2: "Ideas.", date: "22 December,2022", tag:"Bedroom"
                 },
                 {
-                    id: 3, img: img6, rectangle: "Interior Design", header1: "Best For Any Office & Business Interior ", header2: "Solution", date: "25 December,2022"
+                    id: 3, img: img6, rectangle: "Interior Design", header1: "Best For Any Office & Business Interior ", header2: "Solution", date: "25 December,2022", tag:"Building"
                 },
                 {
-                    id: 4, img: img7, rectangle: "Kitchen Design", header1: "Let’s Get Solution For Building Construction ", header2: "Work", date: "26 December,2022"
+                    id: 4, img: img7, rectangle: "Kitchen Design", header1: "Let’s Get Solution For Building Construction ", header2: "Work", date: "26 December,2022", tag:"Kitchen"
                 },
                 {
-                    id: 5, img: img8, rectangle: "Living Design", header1: "Low Cost Latest Invented Interior Designing ", header2: "Ideas.", date: "22 December,2022"
+                    id: 5, img: img8, rectangle: "Living Design", header1: "Low Cost Latest Invented Interior Designing ", header2: "Ideas.", date: "22 December,2022", tag:"Bedroom"
                 },
                 {
-                    id: 6, img: img9, rectangle: "Interior Design", header1: "Best For Any Office & Business Interior ", header2: "Solution", date: "25 December,2022"
+                    id: 6, img: img9, rectangle: "Interior Design", header1: "Best For Any Office & Business Interior ", header2: "Solution", date: "25 December,2022", tag:"Kitchen Planning"
                 },
             ],
             bannerInfo:{

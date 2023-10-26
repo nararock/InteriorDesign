@@ -10,16 +10,34 @@
             <a class="header-left__text" href="index.html">Interno</a>
         </div>
         <div class="header-right">
-            <a class="header-right__link" href="#">Home</a>
-            <a class="header-right__link" href="#">Project</a>
-            <a class="header-right__link" href="#">Blog</a>
+            <router-link class="header-right__link" v-for="link in links" :key="link.id" :to="link.url">{{ link.name }}</router-link>            
         </div>
     </header>
 </template>
 
 <script>
     export default {
-        
+        data(){
+            return{
+                links:[
+                    {
+                        id: 0,
+                        name: 'Home',
+                        url: '/'
+                    },
+                    {
+                        id: 1,
+                        name: 'Project',
+                        url: '/project'
+                    },
+                    {
+                        id: 0,
+                        name: 'Blog',
+                        url: '/blog'
+                    }
+                ]
+            }
+        }
     }
 </script>
 

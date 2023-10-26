@@ -30,15 +30,18 @@
                         <h3 class="projects-item__header">Modern Kitchen</h3>
                         <p class="projects-item__text">Decor / Artchitecture</p>
                     </div>
-                    <svg class="projects-item__circle" width="70" height="70" viewBox="0 0 70 70" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="35" cy="35" r="35" fill="#F4F0EC" />
-                    </svg>
-                    <svg class="projects-item__arrow" width="10" height="20" viewBox="0 0 10 20" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 19L9 10L1 1" stroke="#292F36" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
+                    <router-link class="project-link" :to="{name: 'ProjectDetails', params:{id: 1}}">
+                        <svg class="projects-item__circle" width="70" height="70" viewBox="0 0 70 70" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="35" cy="35" r="35" fill="#F4F0EC" />
+                        </svg>
+                        <svg class="projects-item__arrow" width="10" height="20" viewBox="0 0 10 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 19L9 10L1 1" stroke="#292F36" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </router-link>
+                    
                 </div>
             </div>
             <div class="projects-item">
@@ -48,15 +51,18 @@
                         <h3 class="projects-item__header">Modern Kitchen</h3>
                         <p class="projects-item__text">Decor / Artchitecture</p>
                     </div>
-                    <svg class="projects-item__circle" width="70" height="70" viewBox="0 0 70 70" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="35" cy="35" r="35" fill="#F4F0EC" />
-                    </svg>
-                    <svg class="projects-item__arrow" width="10" height="20" viewBox="0 0 10 20" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 19L9 10L1 1" stroke="#292F36" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
+                    <router-link class="project-link" :to="{name: 'ProjectDetails', params:{id: 2}}">
+                        <svg class="projects-item__circle" width="70" height="70" viewBox="0 0 70 70" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="35" cy="35" r="35" fill="#F4F0EC" />
+                        </svg>
+                        <svg class="projects-item__arrow" width="10" height="20" viewBox="0 0 10 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 19L9 10L1 1" stroke="#292F36" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </router-link>
+                    
                 </div>
             </div>
             <div class="projects-item">
@@ -66,15 +72,18 @@
                         <h3 class="projects-item__header">Modern Kitchen</h3>
                         <p class="projects-item__text">Decor / Artchitecture</p>
                     </div>
-                    <svg class="projects-item__circle" width="70" height="70" viewBox="0 0 70 70" fill="none"
+                    <router-link class="project-link" :to="{name: 'ProjectDetails', params:{id: 3}}">
+                        <svg class="projects-item__circle" width="70" height="70" viewBox="0 0 70 70" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <circle cx="35" cy="35" r="35" fill="#F4F0EC" />
-                    </svg>
-                    <svg class="projects-item__arrow" width="10" height="20" viewBox="0 0 10 20" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 19L9 10L1 1" stroke="#292F36" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
+                        </svg>
+                        <svg class="projects-item__arrow" width="10" height="20" viewBox="0 0 10 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 19L9 10L1 1" stroke="#292F36" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </router-link>
+                    
                 </div>
             </div>
             <div class="projects-item">
@@ -84,15 +93,18 @@
                         <h3 class="projects-item__header">Modern Kitchen</h3>
                         <p class="projects-item__text">Decor / Artchitecture</p>
                     </div>
-                    <svg class="projects-item__circle" width="70" height="70" viewBox="0 0 70 70" fill="none"
+                    <router-link class="project-link" :to="{name: 'ProjectDetails', params:{id: 4}}">
+                        <svg class="projects-item__circle" width="70" height="70" viewBox="0 0 70 70" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <circle cx="35" cy="35" r="35" fill="#F4F0EC" />
-                    </svg>
-                    <svg class="projects-item__arrow" width="10" height="20" viewBox="0 0 10 20" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 19L9 10L1 1" stroke="#292F36" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
+                        </svg>
+                        <svg class="projects-item__arrow" width="10" height="20" viewBox="0 0 10 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 19L9 10L1 1" stroke="#292F36" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </router-link>
+                    
                 </div>
             </div>
         </div>

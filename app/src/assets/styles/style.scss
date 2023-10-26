@@ -123,19 +123,24 @@ a {
                         margin-bottom: 4px;
                        } 
                        .projects-item__text{
-                        @include text($fontSize);
-                       }
-                }
-                .projects-item__arrow{
-                    position: absolute;
-                    right: 30px;
-                }
+                            @include text($fontSize);                       
+                        }       
+                    
+                }  
+                .project-link{
+                    .projects-item__arrow{
+                        position: absolute;
+                        right: 30px;
+                        top: 22px;
+                    }
                 .projects-item__circle:hover{
                     circle{
                         fill: #CDA274;
                     }                    
                     cursor: pointer;
-                }               
+                }    
+                }
+                            
             }
         }
     }

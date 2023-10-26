@@ -159,11 +159,28 @@ export default{
                 text4:`However, the upscale premium segment in particular is booming: a growing group of buyers is forming in the kitchen segment starting at 12,000 euros, 
                 who see kitchens as a high-quality, long-lasting investment. Correspondingly, a lot of financial reserves are therefore increasingly being used for planning 
                 a kitchen instead of for a new car or a vacation.`
-            }
+            },
+            {
+                id:6, tag:"Building",
+                header:"Best For Any Office & Business Interior Solution",
+                img1:img14, date:"1 November,2022",
+                text1:`A building or edifice is an enclosed structure with a roof and walls, usually standing permanently in one place,
+                such as a house or factory.`,
+                text2: `Buildings come in a variety of sizes, shapes, and functions, and have been adapted throughout history for numerous 
+                factors, from building materials available, to weather conditions, land prices, ground conditions, specific uses, prestige, 
+                and aesthetic reasons. `,
+                quote:"The function of design is letting design function.",
+                subheader:"Design is not a single object or dimension",
+                text3:`Buildings serve several societal needs – occupancy, primarily as shelter from weather, security, living space, privacy, 
+                to store belongings, and to comfortably live and work.`,
+                img2:img15,
+                text4:`There is clear evidence of homebuilding from around 18,000 BC.`
+            },
         ]
+        const temp =  articles.find((art) => art.id === Number(this.$route.params.id));
         return{
             articles: articles,
-            temp: articles,
+            temp: [temp]
         }
     },
     methods: {

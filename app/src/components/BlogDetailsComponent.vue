@@ -10,6 +10,6 @@ import ArticleItemComponent from "./ArticleItemComponent.vue";
 export default{
     components:{
         ArticleItemComponent
-    }
+    },
 }
 </script>

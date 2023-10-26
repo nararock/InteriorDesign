@@ -1,10 +1,9 @@
 <template>
-    <HeaderComponent/>
     <div class="project-banner"></div>
     <div class="description">
-        <h1>{{ header }}</h1>
-        <p>{{ text1 }}</p>
-        <p>{{ text2 }}</p>
+        <h1>{{ art.header }}</h1>
+        <p>{{ art.text1 }}</p>
+        <p>{{ art.text2 }}</p>
     </div>
     <swiper
         :style="{
@@ -20,17 +19,17 @@
         class="mySwiper">
         <swiper-slide>
             <div class="swiper-zoom-container">
-                <img :src='img1' alt="">
+                <img :src='art.img1' alt="">
             </div>
         </swiper-slide>
         <swiper-slide>
             <div class="swiper-zoom-container">
-                <img :src='img2' alt="">
+                <img :src='art.img2' alt="">
             </div>
         </swiper-slide>
         <swiper-slide>
             <div class="swiper-zoom-container">
-                <img :src='img3' alt="">
+                <img :src='art.img3' alt="">
             </div>
         </swiper-slide>
     </swiper>
@@ -38,7 +37,7 @@
 </template>
 
 <script>
-import HeaderComponent from './HeaderComponent.vue';
+
 import { mapState } from 'vuex';
 import {Swiper, SwiperSlide} from 'swiper/vue';
 import 'swiper/css';
@@ -54,7 +53,8 @@ import img3 from '../assets/img/bedroom3.jpg';
 import FooterComponent from './FooterComponent.vue';
 
     export default {
-    components: { HeaderComponent, Swiper, SwiperSlide, FooterComponent },
+       
+    components: { Swiper, SwiperSlide, FooterComponent },
     setup() {
       return {
         modules: [Zoom, Navigation, Pagination],
@@ -68,9 +68,12 @@ import FooterComponent from './FooterComponent.vue';
         }
     },
     computed:{
-        ...mapState(['header', 'text1', 'text2'])
+        ...mapState(['articles']),
+        art() {
+            return this.articles.find((art) => art.id === Number(this.$route.params.id));
+        }
+        },        
     }
-}
 
 </script>
 
